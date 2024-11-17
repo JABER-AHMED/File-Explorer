@@ -6,14 +6,14 @@ import humanize
 
 class FileManager:
     @staticmethod
-    def validate_directory(directory):
+    def directory_validation(directory):
         path = Path(directory)
         if not path.is_dir():
             raise ValueError(f"{directory} is not a valid directory.")
         return path
 
     @staticmethod
-    def extract_metadata(file_path):
+    def metadata_extraction(file_path):
         stat = file_path.stat()
         return {
             'Name': file_path.name,
@@ -41,18 +41,18 @@ class FileDisplay:
             print(f"{'Name':<30} {'Size (KB)':<10} {'Created':<30} {'Last Modified'}")
             print("-" * 95)
             for file in files:
-                metadata = FileManager.extract_metadata(file)
+                metadata = FileManager.metadata_extraction(file)
                 print(f"{metadata['Name']:<30} {metadata['Size (KB)']:<10} {metadata['Created']:<30} {metadata['Last Modified']}")
             print("-" * 95)
 
 
 def main():
-    print("File System Explorer")
+    print("File Explorer")
     print("---------------------")
     directory = input("Enter the directory path to scan: ").strip()
     
     try:
-        validated_dir = FileManager.validate_directory(directory)
+        validated_dir = FileManager.directory_validation(directory)
         print(f"\n Scanning {validated_dir}...")
 
         grouped_files = FileManager.group_files_by_type(validated_dir)
