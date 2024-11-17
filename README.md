@@ -1,4 +1,4 @@
-#File Explorer Documentation
+File Explorer Documentation
 This program is a simple and interactive file system explorer that allows you to scan a directory, group files by their types, and display metadata for each file. It uses Python's pathlib, humanize, and datetime modules to make the output readable and user-friendly.
 
 Features
