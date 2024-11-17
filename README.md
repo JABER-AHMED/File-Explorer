@@ -34,14 +34,13 @@ Provide a valid directory path when prompted.
 
 ---
 
-## Expected Output
-
-![image](https://github.com/user-attachments/assets/401ff998-fff5-4154-8cd0-4014af49216e)
-
-
 ## View Results
 The program will:
 
 - **Validate the directory.**
 - **Group files by type.**
 - **Display file metadata in a tabular format.**
+
+## Expected Output
+
+![image](https://github.com/user-attachments/assets/401ff998-fff5-4154-8cd0-4014af49216e)
