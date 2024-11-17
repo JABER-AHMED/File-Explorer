@@ -20,3 +20,23 @@ This program is a simple and interactive file system explorer that allows you to
 - **The `humanize` library**: Install it using:
   ```bash
   pip install humanize
+
+# Usage Instructions
+
+## Run the Script
+Execute the script by running:
+
+```bash
+python file_explorer.py
+
+## Enter Directory Path
+Provide a valid directory path when prompted.
+
+---
+
+## View Results
+The program will:
+
+- **Validate the directory.**
+- **Group files by type.**
+- **Display file metadata in a tabular format.**
